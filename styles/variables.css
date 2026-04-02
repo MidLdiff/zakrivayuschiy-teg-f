@@ -24,11 +24,11 @@
   --wrapper: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --header-title: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-subtitle: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  --header-height: clamp(20.4375rem, 17.7538rem + 11.4504vw, 23.25rem);
+  --header-padding: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem);
   --border-decor: 2px solid #000000;
   --laybel-decor: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 
-  --color-white: #fff;
-  --color-red: #ff0000;
-  --color-black: #000000;
+  --animation-main-color: #fff;
+  --animation-select-color: #ff0000;
+  --animation-hover-color: #000000;
 }
