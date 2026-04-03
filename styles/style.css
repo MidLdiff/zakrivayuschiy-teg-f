@@ -165,19 +165,17 @@
   margin-block-end: 100px;
   margin-block-start: 50px;
 }
-.save-icon {
-  inline-size: 21px;
-  aspect-ratio: 1/1;
-}
-.floppy-icon path {
-  fill: #fff;
-  mix-blend-mode: difference;
-}
+
 .save__button {
   display: flex;
   gap: 8px;
   align-items: center;
   padding: 17px 20px;
+}
+.save__icon {
+  mix-blend-mode: difference;
+  max-inline-size: 21px;
+  block-size: auto;
 }
 dialog {
   inline-size: 383px;
@@ -187,21 +185,21 @@ dialog {
   border: var(--border-decor);
   font-family: var(--accent-font);
 }
+.dialog__icon {
+  mix-blend-mode: difference;
+}
+
 dialog[open] {
   display: grid;
   grid-template-columns: min-content 1fr;
+  align-items: center;
   column-gap: 20px;
   row-gap: 30px;
 }
 dialog[open]::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
-.dialog__save-icon {
-  grid-column: 1/2;
-  inline-size: 39px;
-  aspect-ratio: 1/1;
-  align-self: center;
-}
+
 .dialog-text {
   grid-column: 2/3;
   font-size: 14px;
@@ -221,9 +219,9 @@ dialog[open]::backdrop {
     display: flex;
     flex-direction: column;
   }
-  .save-icon {
-    inline-size: 28px;
-    aspect-ratio: 1/1;
+  .save__icon {
+    max-inline-size: 28px;
+    block-size: auto;
   }
 }
 .button:focus {
